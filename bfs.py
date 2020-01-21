@@ -1,3 +1,5 @@
+#BFS with recursive solution
+
 class Graph:
     
     def __init__(self):
@@ -11,14 +13,6 @@ class Graph:
        
     def add_vertice(self,v):
         self.graph[v]=[]
-    
-#    def search_node(self, vertice, visited):
-#        if not(visited[vertice]):
-#            visited[vertice]==True
-#            adjacents=self.graph[vertice]
-#            for a in adjacents: print(a, end=' ')
-#            for adjacent in adjacents:
-#                self.search_node(adjacent,visited)
                 
     def search_level(self, level):
         new_level=[]
@@ -27,8 +21,7 @@ class Graph:
             new_level+=self.graph[vertice]
         if new_level:
             self.search_level(new_level)
-        
-                
+                     
     def BFS(self,vertice):
         self.search_level([vertice])
                 
