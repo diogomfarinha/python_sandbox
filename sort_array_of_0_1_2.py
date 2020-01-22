@@ -8,7 +8,7 @@ def solve(N,A):
     dic = defaultdict(int)
     for index in range(N):
         dic[A[index]]+=1
-    keys=list(dic.keys())
+    keys=list(dic.keys()) #dictionary keys may not be ordered
     keys.sort()
     result=[]
     for key in keys:
