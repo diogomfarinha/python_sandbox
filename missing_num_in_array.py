@@ -6,10 +6,10 @@
 # instead of looping.
 def solve(N,A):
     actual_sum=0
-    ideal_sum=N#alternatively, could just use the formula n*(n+1)/2
+    ideal_sum=N #alternatively, could just use the formula N*(N+1)/2
     for i in range(0,N-1):
-        actual_sum+=A[i]#sums the numbers in array
-        ideal_sum+=i+1#sums the numbers that were suposed to be in array
+        actual_sum+=A[i] #sums the numbers in array
+        ideal_sum+=i+1 #sums the numbers that were suposed to be in array
     print(ideal_sum-actual_sum)
     
 # Easier solution, but only works for sorted arrays
