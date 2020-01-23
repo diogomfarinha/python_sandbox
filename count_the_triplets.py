@@ -15,11 +15,10 @@ def solve(N,A):
             else:
                 break
     print(triplets if triplets>0 else -1)
-        
+
 if __name__=='__main__':
     T=int(input())
     for _ in range(T):
         N=int(input())
         A=[int(x) for x in input().split()]
         solve(N,A)
-     
