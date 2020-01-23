@@ -1,7 +1,7 @@
 #   Solution to:
 #   https://practice.geeksforgeeks.org/problems/subarray-with-given-sum/0
 
-#Works but is too slow...   
+# Works but is too slow...   
 def solve(N,S,A):
     for i in range(N):
         for j in range(i+1,N+1):
@@ -14,7 +14,7 @@ def solve(N,S,A):
     else: 
         print('-1')
         
-#Works but is also too slow...   
+# Works but is also too slow...   
 def solve2(N,S,A):
     for start in range(N):
         sum=0
@@ -28,7 +28,7 @@ def solve2(N,S,A):
     else: 
         print('-1')
 
-#Works with complexity O(n)
+# Works with complexity O(n)
 def solve3(N,S,A):
     begin,end,sum = 0,0,0
     while True:
